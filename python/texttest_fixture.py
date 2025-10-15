@@ -21,6 +21,20 @@ def main():
     import sys
     if len(sys.argv) > 1:
         days = int(sys.argv[1]) + 1
+        # Extra Practice: Uncomment to use the new item classes
+        # resetItemsToV2 = sys.argv[2]
+        # if resetItemsToV2:
+        #     items = [
+        #         GenericItem(name="+5 Dexterity Vest", sell_in=10, quality=20),
+        #         AgedBrieItem(name="Aged Brie", sell_in=2, quality=0),
+        #         GenericItem(name="Elixir of the Mongoose", sell_in=5, quality=7),
+        #         SulfurasItem(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+        #         SulfurasItem(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+        #         BackstagePassItem(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+        #         BackstagePassItem(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+        #         BackstagePassItem(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+        #         ConjuredItem(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+        #     ]
     for day in range(days):
         print("-------- day %s --------" % day)
         print("name, sellIn, quality")
